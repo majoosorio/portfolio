@@ -1,3 +1,93 @@
+:root {
+  --dev_color: #213631;
+  --ux_color: #cab5f6;
+  --main_text_color: #fcf3e7;
+  --secondary_text_color: #a693cd;
+  --pink: #e1758c;
+  --dark_purple: #544c64;
+  --main_font: "League Gothic", Sans-Serif;
+  --secondary_font: "Source Sans Pro", Sans-Serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+  height: 8vh;
+  width: 100%;
+}
+
 nav ul {
-    display: flex;
+  font-family: var(--main_font);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+}
+
+.nav-item a:hover {
+  color: var(--pink);
+}
+
+.little_title {
+  font-family: var(--secondary_font);
+  text-align: center;
+  font-size: 45px;
+}
+
+.h2_dev {
+  color: var(--main_text_color);
+}
+
+.h2_ux {
+  color: var(--secondary_text_color);
+}
+
+.title {
+  font-family: var(--main_font);
+  font-size: 250px;
+  text-align: center;
+}
+
+.text_ux {
+  color: var(--secondary_text_color);
+}
+
+.text_dev {
+  color: var(--main_text_color);
+}
+
+section {
+  display: flex;
+}
+
+.dev_side {
+  background-image: url("./images/dev_side.png");
+  width: 50%;
+  height: 95vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ux_side {
+  background-image: url("./images/uxside.png");
+  width: 50%;
+  height: 95vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+footer {
 }
