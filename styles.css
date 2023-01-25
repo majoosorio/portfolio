@@ -1,12 +1,22 @@
 :root {
+  /* Colors */
   --dev_color: #213631;
   --ux_color: #cab5f6;
   --main_text_color: #fcf3e7;
   --secondary_text_color: #a693cd;
   --pink: #e1758c;
   --dark_purple: #544c64;
+
+  /* Font family */
   --main_font: "League Gothic", Sans-Serif;
   --secondary_font: "Source Sans Pro", Sans-Serif;
+
+  /* Font sizes */
+  --extra-small-text: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+  --small-text: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.90rem);
+  --regular-text: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --h2-size: clamp(2.07rem, calc(1.64rem + 1.17vw), 2.75rem);
+  --h1-size: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
 }
 
 * {
@@ -16,12 +26,21 @@
 }
 
 header {
-  height: 8vh;
+  height: 100px;
   width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 nav ul {
-  font-family: var(--main_font);
+  font-family: var(--secondary_font);
+  font-weight: 600;
   background-color: #ffffff;
   display: flex;
   justify-content: space-around;
@@ -34,7 +53,7 @@ nav ul {
 .nav-item a {
   text-decoration: none;
   color: #000000;
-  font-size: 30px;
+  font-size: var(--h2-size);;
 }
 
 .nav-item a:hover {
@@ -65,7 +84,7 @@ nav ul {
   color: var(--secondary_text_color);
 }
 
-.text_dev {
+.text_default {
   color: var(--main_text_color);
 }
 
@@ -76,18 +95,77 @@ section {
 .dev_side {
   background-image: url("./images/dev_side.png");
   width: 50%;
-  height: 95vh;
-  background-size: contain;
+  height: 80vh;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: right;
+  position: relative;
 }
 
 .ux_side {
   background-image: url("./images/uxside.png");
   width: 50%;
-  height: 95vh;
-  background-size: contain;
+  height: 80vh;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: left;
+  position: relative;
 }
 
 footer {
+  height: 50px;
+  display: flex;
+  place-content: center end;
+  gap: 20px;
 }
+
+footer a {
+  text-decoration: none;
+  font-family: var(--secondary_font);
+  font-size: var(--regular-text);
+  font-weight: 600;
+  margin-right: 35px;
+}
+
+a, a:visited, a:active {
+  color: inherit;
+}
+
+.hide_portfolio_title{
+  background-color: #e1758c;
+  font-family: var(--secondary_font);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.ux_side:hover + .hide_portfolio_title {
+  display: block;
+}
+
+#not-found {
+  width: 100%;
+  background-color: var(--dev_color);
+  display: grid;
+  place-items: center;
+}
+
+#not-found .container {
+  text-align: center;
+}
+
+#not-found span {
+  font-family: var(--main_font);
+  color: var(--main_text_color);
+  font-size: var(--h2-size);
+  text-transform: uppercase;
+}
+
+
+
+
