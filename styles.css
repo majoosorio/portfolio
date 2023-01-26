@@ -358,27 +358,40 @@ footer a {
   animation: grow 2s 1;
 }
 
-.main-container .container {
-  text-align: center;
-}
-
 #not-found .col-sm {
   margin: 2rem 0;
 }
 
 .img-about {
-  width: 30rem;
+  width: min(35rem, 40vw);
+  position: fixed;
+  bottom: 50px;
+  left: 150px;
 }
 
 .title-about {
   font-family: var(--main_font);
-  font-size: var(--h1-size);
-  text-align: center;
+  font-size: clamp(7rem, calc(7.2rem + 0.22vw), 8rem);
   text-transform: uppercase;
 }
 
 .about-text {
-  font-size: var(--h1-size);
+  font-size: clamp(1.4rem, calc(1.6rem + 0.22vw), 2rem);
+}
+
+.img-container-about {
+  text-align: end;
+}
+
+.img-container-about span {
+  font-size: clamp(3rem, calc(3.2rem + 0.22vw), 4rem);
+  line-height: 1;
+}
+
+@media only screen and (max-width: 797px) {
+  .img-container-about {
+    display: none;
+  }
 }
 
 .img-dev {
