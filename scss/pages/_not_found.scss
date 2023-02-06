@@ -1,0 +1,48 @@
+.text-404 {
+  font-size: var(--h2-size);
+}
+
+.img-404 {
+  width: 30rem;
+  animation: grow 2s 1;
+}
+
+#not-found .col-sm {
+  margin: 2rem 0;
+}
+
+.img-about {
+  width: min(35rem, 40vw);
+  position: fixed;
+  bottom: 50px;
+  left: 150px;
+}
+
+.title-about {
+  font-family: var(--main_font);
+  font-size: clamp(7rem, calc(7.2rem + 0.22vw), 8rem);
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: clamp(1.4rem, calc(1.6rem + 0.22vw), 2rem);
+}
+
+.img-container-about {
+  text-align: end;
+}
+
+.img-container-about span {
+  font-size: clamp(3rem, calc(3.2rem + 0.22vw), 4rem);
+  line-height: 1;
+}
+
+@media only screen and (max-width: 797px) {
+  .img-container-about {
+    display: none;
+  }
+}
+
+.img-dev {
+  width: 40rem;
+}

@@ -1,0 +1,20 @@
+:root {
+    /* Colors */
+    --dev_color: #213631;
+    --ux_color: #cab5f6;
+    --main_text_color: #fcf3e7;
+    --secondary_text_color: #a693cd;
+    --pink: #e1758c;
+    --dark_purple: #544c64;
+  
+    /* Font family */
+    --main_font: "League Gothic", Sans-Serif;
+    --secondary_font: "Source Sans Pro", Sans-Serif;
+  
+    /* Font sizes */
+    --extra-small-text: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+    --small-text: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.9rem);
+    --regular-text: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+    --h2-size: clamp(2.07rem, calc(1.64rem + 1.17vw), 2.75rem);
+    --h1-size: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
+  }

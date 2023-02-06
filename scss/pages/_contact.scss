@@ -1,0 +1,63 @@
+@use "../abstracts/variables";
+@use "../abstracts/animations";
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  div {
+    display: grid;
+  }
+}
+
+.send-me-message {
+  margin-bottom: 50px;
+  font-size: min(7.5vw, 5rem);
+}
+
+.form-text-area {
+  grid-column: 1 / span 2;
+}
+
+.container-form {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  border-radius: 1rem;
+  width: min(890px, 85vw);
+  height: min(800px, 60vh);
+}
+
+.white-container {
+  padding: 3rem 2rem;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 1rem 0 0 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+
+  label {
+    font-size: min(2vw, 1.4rem);
+    font-family: var(--main_font);
+    color: var(--dev_color);
+    text-transform: uppercase;
+  }
+}
+
+.form-girl-container {
+  display: grid;
+  position: relative;
+  padding: 3rem 2rem;
+  place-content: end center;
+  background-color: var(--secondary_text_color);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.img-contact {
+  width: 10rem;
+  position: absolute;
+  top: min(-0.45vh, -90px);
+  left: 25%;
+  transform: rotate(180deg);
+  animation: fall 2s 1 ease-in-out;
+}

@@ -1,0 +1,5 @@
+@mixin transition($time, $type) {
+  transition: opacity $time $type;
+  -moz-transition: opacity $time $type;
+  -webkit-transition: opacity $time $type;
+}
