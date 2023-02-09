@@ -20,11 +20,35 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
     <title>Portfolio - Maria Jose 😸</title>
   </head>
+
   <body>
     <header>
+      <input type="checkbox" id="burger" />
       <nav>
+        <label for="burger" class="burger">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </label>
         <ul>
           <li class="nav-item"><a href="#">INICIO</a></li>
           <li class="nav-item"><a href="./pages/about.html">SOBRE MI</a></li>
@@ -35,30 +59,28 @@
     <main class="main-index">
       <section class="index-container">
         <div class="dev_side">
+          <h2 class="primary_text_color little_title">PORTAFOLIO</h2>
+          <p class="primary_text_color title">DEV</p>
           <a href="./pages/dev_portfolio.html" class="circle dev-circle">
             VER PORTAFOLIO</a
           >
-          <h2 class="primary_text_color little_title">PORTAFOLIO</h2>
-          <p class="primary_text_color title">DEV</p>
         </div>
         <div class="ux_side">
+          <h2 class="secondary_text_color little_title">PORTAFOLIO</h2>
+          <p class="secondary_text_color title">UX/UI</p>
           <a href="./pages/design_portfolio.html" class="circle ux-circle">
             VER PORTAFOLIO</a
           >
-          <h2 class="secondary_text_color little_title">PORTAFOLIO</h2>
-          <p class="secondary_text_color title">UX/UI</p>
         </div>
       </section>
     </main>
     <footer>
-      <a target="_blank" href="https://www.linkedin.com/in/maria-jose-osorio/"
-        ><div><i class="fa-brands fa-linkedin"></i> maria-jose-osorio</div></a
-      >
-      <a target="_blank" href="https://www.behance.net/maria-jose-osorio/"
-        ><div>
-          <i class="fa-brands fa-square-behance"></i> maria-jose-osorio
-        </div></a
-      >
+      <a target="_blank" href="https://www.linkedin.com/in/maria-jose-osorio/">
+        <div><i class="fa-brands fa-linkedin"></i> maria-jose-osorio</div>
+      </a>
+      <a target="_blank" href="https://www.behance.net/maria-jose-osorio/">
+        <div><i class="fa-brands fa-square-behance"></i> maria-jose-osorio</div>
+      </a>
     </footer>
   </body>
 </html>

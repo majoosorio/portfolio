@@ -8,7 +8,7 @@
 
 .title {
   font-family: var(--main_font);
-  font-size: 250px;
+  font-size: min(250px, 25vw);
   text-align: center;
 }
 
@@ -31,7 +31,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 15%;
+  padding: 15% 0;
 }
 
 .dev_side {
@@ -75,4 +75,37 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 675px) {
+  .title {
+    font-size: 150px;
+  }
+
+  .index-container {
+    display: block;
+    width: 100%;
+  }
+
+  .dev_side,
+  .ux_side {
+    width: 100%;
+  }
+
+  .circle {
+    width: 60%;
+    border-radius: 2rem;
+    position: static;
+    aspect-ratio: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .dev-circle,
+  .ux-circle {
+    opacity: 100;
+  }
 }
