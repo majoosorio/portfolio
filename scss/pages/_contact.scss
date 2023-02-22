@@ -12,7 +12,6 @@ form {
 }
 
 .send-me-message {
-  margin-bottom: 50px;
   font-size: min(7.5vw, 5rem);
 }
 
@@ -25,7 +24,6 @@ form {
   grid-template-columns: 65% 35%;
   border-radius: 1rem;
   width: min(890px, 85vw);
-  height: min(800px, 60vh);
 }
 
 .white-container {
@@ -37,7 +35,7 @@ form {
   justify-content: space-between;
 
   label {
-    font-size: min(2vw, 1.4rem);
+    font-size: min(3vw, 1.4rem);
     font-family: var(--main_font);
     color: var(--dev_color);
     text-transform: uppercase;
@@ -60,4 +58,58 @@ form {
   left: 25%;
   transform: rotate(180deg);
   animation: fall 2s 1 ease-in-out;
+}
+
+@media only screen and (max-width: 840px) {
+  .send-me-message {
+    padding-bottom: 10px;
+  }
+
+  .img-contact {
+    display: none;
+  }
+
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .form-girl-container {
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .white-container {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  form {
+    display: grid;
+    grid-template-columns: unset;
+    gap: 20px;
+
+    div {
+      display: grid;
+    }
+  }
+
+  .send-me-message {
+    font-size: min(10vw, 5rem);
+  }
+
+  .form-text-area {
+    grid-column: unset;
+  }
+
+  .white-container {
+    label {
+      font-size: min(5vw, 1.4rem);
+    }
+  }
+
+  .form-girl-container {
+    padding: 2rem;
+  }
 }

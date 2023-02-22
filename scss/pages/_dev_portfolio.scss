@@ -1,0 +1,30 @@
+.text-dev-portfolio {
+  font-size: var(--h2-size);
+}
+
+.text-container-dev {
+  text-align: left;
+}
+
+.dev-portfolio-container {
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .img-dev {
+    width: max(18rem, 80vw);
+    margin: 0 auto;
+  }
+
+  .text-dev-portfolio {
+    font-size: var(--h1-size);
+  }
+
+  .text-container-dev {
+    text-align: center;
+  }
+
+  .img-container-dev {
+    display: flex;
+  }
+}
